@@ -1,6 +1,6 @@
 ///Square root search
 /// Runtime: O(√N)
-pub fn root<T>(arr: Vec<T>, val: T) -> Option<usize>
+pub fn root<T>(arr: &[T], val: T) -> Option<usize>
 where
     T: PartialOrd,
 {

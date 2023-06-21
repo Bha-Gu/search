@@ -13,8 +13,8 @@ fn main() {
     sorted.sort();
     println!(
         "L: {:?}\nB: {:?}\nR: {:?}",
-        linear(arr, 3),
-        binary(sorted.clone(), 3),
-        root(sorted, 3)
+        linear(&arr, 23),
+        binary(&sorted, 23),
+        root(&sorted, 23)
     );
 }

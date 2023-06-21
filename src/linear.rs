@@ -1,6 +1,6 @@
 ///Linear search
 /// Runtime O(N)
-pub fn linear<T>(arr: Vec<T>, val: T) -> Option<usize>
+pub fn linear<T>(arr: &[T], val: T) -> Option<usize>
 where
     T: PartialEq,
 {
