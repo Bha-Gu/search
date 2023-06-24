@@ -10,11 +10,11 @@ use root::root;
 fn main() {
     let arr = vec![1, 2, 4, 23, 5, 6, 3, 7, 9, 8, 93];
     let mut sorted = arr.clone();
-    sorted.sort();
+    sorted.sort_unstable(); // unstable sort is faster on primitive types
     println!(
         "L: {:?}\nB: {:?}\nR: {:?}",
-        linear(&arr, 23),
-        binary(&sorted, 23),
-        root(&sorted, 23)
+        linear(&arr, &23),
+        binary(&sorted, &23),
+        root(&sorted, &23)
     );
 }

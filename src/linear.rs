@@ -1,6 +1,6 @@
 ///Linear search
 /// Runtime O(N)
-pub fn linear<T>(arr: &[T], val: T) -> Option<usize>
+pub fn linear<T>(arr: &[T], val: &T) -> Option<usize>
 where
     T: PartialEq,
 {
@@ -11,5 +11,5 @@ where
     // }
     // None
     // Rust Linter Optimizer
-    (0..arr.len()).find(|&i| arr[i] == val)
+    (0..arr.len()).find(|&i| arr[i] == *val)
 }
