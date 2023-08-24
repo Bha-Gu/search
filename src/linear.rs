@@ -11,5 +11,6 @@ where
     // }
     // None
     // Rust Linter Optimizer
-    (0..arr.len()).find(|&i| arr[i] == *val)
+    // (0..arr.len()).find(|&i| arr[i] == *val)
+    arr.iter().position(|i| *i == *val)
 }
